@@ -1,0 +1,15 @@
+.cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+data/conversations/
+data/dialogue_states/
+data/users/
+data/routing_audit/
+data/processed/mandi_disk_cache.json
+data/processed/convo_translation_cache.json
+data/processed/tn_soil_locality*.csv

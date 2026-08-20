@@ -1,0 +1,55 @@
+{
+  "intent": "general_agriculture",
+  "entities": {
+    "raw_query": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+    "normalized": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+    "is_planting_declaration": false,
+    "question_focus": []
+  },
+  "advisory": {
+    "recommendation": " Agriculture guide-la: Keep beds moist, 2–3 cm shallow water Nursery bed moist-aa vechukonga, 2–3 cm shallow water Interval 2 days, 25 mm.",
+    "reason": "Agent orchestrator — convodataset vector match + tools.",
+    "evidence": {
+      "tasks": [
+        {
+          "intent": "general_agriculture",
+          "sub_query": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+          "tools": [
+            {
+              "tool": "convo_dataset",
+              "confidence": 0.0
+            },
+            {
+              "tool": "agricultural_knowledge",
+              "confidence": 0.8999999999999999
+            }
+          ]
+        }
+      ],
+      "convo_dataset": [
+        {
+          "sub_query": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+          "intent": "general_agriculture",
+          "matches": [],
+          "confidence": 0.0,
+          "search_query": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+          "best_answer": null,
+          "best_question": null,
+          "best_score": 0.0
+        }
+      ],
+      "profile_customized": true
+    },
+    "confidence": 0.5974999999999999,
+    "action_time": "Today",
+    "risk_level": "low",
+    "tamil_response": " Agriculture guide-la: Keep beds moist, 2–3 cm shallow water Nursery bed moist-aa vechukonga, 2–3 cm shallow water Interval 2 days, 25 mm.",
+    "english_response": " From agricultural guide: Keep beds moist, 2–3 cm shallow water Nursery bed moist-aa vechukonga, 2–3 cm shallow water Interval 2 days, 25 mm."
+  },
+  "transcription_confidence": 0.85,
+  "detected_language": "Tamil",
+  "normalized_query": "மார்க்கேட் ஒட ஸ்டேட்டட்ஸ் என்ன",
+  "nlp_confidence": 0.5974999999999999,
+  "profile_updated": false,
+  "profile_fields": {}
+}

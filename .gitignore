@@ -1,0 +1,64 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+*.local
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Caches & generated runtime data ---
+.cache/
+**/.cache/
+*.log
+krishivoice/data/conversations/
+krishivoice/data/dialogue_states/
+krishivoice/data/users/
+krishivoice/data/routing_audit/
+krishivoice/data/processed/mandi_disk_cache.json
+krishivoice/data/processed/convo_translation_cache.json
+
+# --- Large datasets (>100MB GitHub limit) — see DATASETS.md ---
+TamilNadu_Soil_Locality_Dataset_100000_Enhanced*.csv
+krishivoice/data/processed/tn_soil_locality*.csv
+
+# --- Duplicate dataset copies (keep primary filenames only) ---
+* (1)*.csv
+* (1)_cleaned.csv
+
+# --- Optional: rebuild indexes locally ---
+# krishivoice/data/processed/*.joblib
+
+# --- ML artifacts (optional local training output) ---
+ml/runs/
+ml/checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# --- Cursor / agent ---
+.cursor/
+agent-transcripts/

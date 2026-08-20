@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-08-19T22:18:54.455654",
+  "summary": {
+    "total_datasets": 14,
+    "using_cleaned_files": 14,
+    "total_rows_indexed": 388718
+  },
+  "indexes": {
+    "tamil_ds": {
+      "loaded": true,
+      "rows": 31652,
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\tamil_ds_index.joblib",
+      "csv": "D:\\Sih\\tamil_ds_cleaned.csv",
+      "built_at": "2026-08-19T22:17:49.900296",
+      "source": "tamil_ds"
+    },
+    "convodataset": {
+      "loaded": true,
+      "rows": 140389,
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\convo_index.joblib",
+      "csv": "D:\\Sih\\convodataset_cleaned.csv",
+      "built_at": "2026-08-19T22:17:57.192328"
+    },
+    "canonical_qa": {
+      "loaded": true,
+      "rows": 100000,
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\canonical_qa_index.joblib",
+      "built_at": "2026-08-19T22:18:07.724988",
+      "source": "D:\\Sih\\krishivoice_qa_dataset_cleaned.csv"
+    }
+  },
+  "ml_models": {
+    "soil_crop_metrics": {
+      "task": "soil_crop_multilabel",
+      "train_rows": 79502,
+      "test_rows": 20498,
+      "test_districts": [
+        "Karur",
+        "Krishnagiri",
+        "Perambalur",
+        "Sivagangai",
+        "Tiruppur",
+        "Villupuram"
+      ],
+      "accuracy_per_label": 0.975,
+      "precision_macro": 0.9167,
+      "recall_macro": 0.8585,
+      "f1_macro": 0.8828,
+      "f1_micro": 0.9785
+    },
+    "yield_metrics": {
+      "task": "yield_prediction",
+      "target": "yield_tph",
+      "results": [
+        {
+          "model": "LinearRegression",
+          "MAE": 1.2326,
+          "RMSE": 1.4538,
+          "R2": 0.0422
+        },
+        {
+          "model": "RandomForest",
+          "MAE": 0.9708,
+          "RMSE": 1.1625,
+          "R2": 0.3876
+        },
+        {
+          "model": "GradientBoosting",
+          "MAE": 0.9885,
+          "RMSE": 1.1994,
+          "R2": 0.3481
+        },
+        {
+          "model": "XGBoost",
+          "MAE": 1.0436,
+          "RMSE": 1.277,
+          "R2": 0.261
+        }
+      ],
+      "selected": "RandomForest"
+    }
+  },
+  "routing_priority": [
+    "1. ML prediction (logged-in farm: crop, yield, market, sowing, risk)",
+    "2. Live tools (irrigation, weather, fertilizer with canonical soil practices)",
+    "3. Tavily web search (if globe enabled)",
+    "4. General FAQ (loans, livestock, schemes)",
+    "5. Canonical Q&A (krishivoice_qa_dataset \u2014 score >= 0.42)",
+    "6. Strict RAG (tamil_ds / convodataset \u2014 score >= strong threshold)",
+    "7. Clarification (weak match refused)"
+  ],
+  "requirements": {
+    "api_keys_optional": [
+      "OPENROUTER_API_KEY (soil OCR + polish)",
+      "TAVILY_API_KEY (web search)"
+    ],
+    "api_keys_not_needed": [
+      "Edge TTS",
+      "Open-Meteo weather",
+      "Browser STT",
+      "ML inference",
+      "Canonical/RAG indexes"
+    ],
+    "data_refresh": "Re-run scripts/rebuild_data_pipeline.py after updating *_cleaned.csv files",
+    "prediction_inputs": [
+      "Parcel soil (pH, N, P, K, OC, EC, texture)",
+      "District/region from land_parcels",
+      "Crop + growth stage from crop_observations",
+      "Weather forecast from Open-Meteo"
+    ]
+  },
+  "datasets": [
+    {
+      "key": "tamil_ds",
+      "file": "tamil_ds_cleaned.csv",
+      "path": "D:\\Sih\\tamil_ds_cleaned.csv",
+      "rows": 31931,
+      "role": "RAG",
+      "purpose": "Tamil Q&A fallback (strict threshold)",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "convodataset",
+      "file": "convodataset_cleaned.csv",
+      "path": "D:\\Sih\\convodataset_cleaned.csv",
+      "rows": 140685,
+      "role": "RAG",
+      "purpose": "English Q&A + Tamil translation",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "qa_dataset",
+      "file": "krishivoice_qa_dataset_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice_qa_dataset_cleaned.csv",
+      "rows": 100000,
+      "role": "Canonical RAG",
+      "purpose": "Primary structured Q&A index",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "canonical_answers",
+      "file": "krishivoice_canonical_answers_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice_canonical_answers_cleaned.csv",
+      "rows": 2772,
+      "role": "Canonical lookup",
+      "purpose": "Verified answer templates by intent/crop/soil",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "intent_taxonomy",
+      "file": "krishivoice_intent_taxonomy_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice_intent_taxonomy_cleaned.csv",
+      "rows": 8,
+      "role": "Routing",
+      "purpose": "Intent definitions for TN farming",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "intent_signatures",
+      "file": "krishivoice_intent_signatures_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice_intent_signatures_cleaned.csv",
+      "rows": 4410,
+      "role": "Routing",
+      "purpose": "Entity signature \u2192 response policy",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "soil_practices",
+      "file": "krishivoice_soil_crop_irrigation_fertilizer_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice_soil_crop_irrigation_fertilizer_cleaned.csv",
+      "rows": 38,
+      "role": "Rules",
+      "purpose": "Soil\u00d7crop irrigation & fertilizer guidance",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "tn_soil_locality",
+      "file": "tn_soil_locality_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\tn_soil_locality_cleaned.csv",
+      "rows": 100000,
+      "role": "ML train",
+      "purpose": "Soil\u2192crop suitability model (100k TN localities)",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "crop_history",
+      "file": "crop_history_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\crop_history_cleaned.csv",
+      "rows": 4848,
+      "role": "ML train",
+      "purpose": "Yield prediction model",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "soil_data",
+      "file": "soil_data_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\soil_data_cleaned.csv",
+      "rows": 1006,
+      "role": "ML train + demo",
+      "purpose": "Parcel soil chemistry",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "weather_data",
+      "file": "weather_data_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\weather_data_cleaned.csv",
+      "rows": 1827,
+      "role": "ML train + demo",
+      "purpose": "District weather averages",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "land_parcels",
+      "file": "land_parcels_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\land_parcels_cleaned.csv",
+      "rows": 500,
+      "role": "Demo context",
+      "purpose": "Farmer parcel profiles",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "farmers",
+      "file": "farmers_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\farmers_cleaned.csv",
+      "rows": 350,
+      "role": "Demo context",
+      "purpose": "Farmer accounts",
+      "uses_cleaned": true,
+      "status": "ok"
+    },
+    {
+      "key": "tamil_translation_cache",
+      "file": "tamil_translation_cache_cleaned.csv",
+      "path": "D:\\Sih\\krishivoice\\data\\processed\\tamil_translation_cache_cleaned.csv",
+      "rows": 343,
+      "role": "Translation",
+      "purpose": "English\u2192Tamil answer cache",
+      "uses_cleaned": true,
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: krishivoice-db
+    environment:
+      POSTGRES_USER: krishivoice
+      POSTGRES_PASSWORD: krishivoice_dev
+      POSTGRES_DB: krishivoice
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backend/app/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+
+volumes:
+  pgdata:

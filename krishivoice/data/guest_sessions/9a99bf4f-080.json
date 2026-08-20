@@ -1,0 +1,30 @@
+{
+  "session_id": "9a99bf4f-080",
+  "created_at": "2026-08-19T16:25:15.781318",
+  "updated_at": "2026-08-19T16:25:16.852488",
+  "language": "English",
+  "step": "greeting",
+  "turn_count": 3,
+  "profile": {},
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Hello! I'm KrishiVoice, your farming assistant. How can I help you today? You can tell me what crop you grow, ask about water, fertilizer, weather, or what to plant for profit.",
+      "at": "2026-08-19T16:25:15.803653",
+      "type": "greeting"
+    },
+    {
+      "role": "user",
+      "content": "\u0ba8\u0bc6\u0bb2\u0bcd market rate \u0b8e\u0ba9\u0bcd\u0ba9?",
+      "at": "2026-08-19T16:25:15.816097"
+    },
+    {
+      "role": "assistant",
+      "content": "Best crops for your Wetland land (Monsoon season (Jun\u2013Oct)): 1. Banana \u2014 demand 10/10, profit potential 7/10. Price hint: \u20b925-45/dozen. 2. Rice \u2014 demand 9/10, profit potential 6/10. Price hint: \u20b922-28/kg, avg yield 4.2 t/ha. 3. Sugarcane \u2014 demand 9/10, profit potential 6/10. Price hint: Govt FRP ~\u20b93400/ton, avg yield 2.2 t/ha. 4. Maize \u2014 demand 8/10, profit potential 6/10. Price hint: \u20b918-24/kg.",
+      "at": "2026-08-19T16:25:16.852488",
+      "intent": "crop_recommendation"
+    }
+  ],
+  "last_intent": null,
+  "greeted": false
+}

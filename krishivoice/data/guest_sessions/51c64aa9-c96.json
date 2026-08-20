@@ -1,0 +1,33 @@
+{
+  "session_id": "51c64aa9-c96",
+  "created_at": "2026-08-19T21:36:01.523278",
+  "updated_at": "2026-08-19T21:36:11.103932",
+  "language": "Tamil",
+  "step": "greeting",
+  "turn_count": 3,
+  "profile": {
+    "crop": "Cotton"
+  },
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "\u0bb5\u0ba3\u0b95\u0bcd\u0b95\u0bae\u0bcd! \u0ba8\u0bbe\u0ba9\u0bcd KrishiVoice \u2014 \u0b89\u0b99\u0bcd\u0b95 farming assistant. \u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf help pannalam? \u0b8e\u0ba9\u0bcd\u0ba9 crop, \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd, \u0b89\u0bb0\u0bae\u0bcd, weather, profit-ku enna plant pannalam-nu kelunga.",
+      "at": "2026-08-19T21:36:01.547288",
+      "type": "greeting"
+    },
+    {
+      "role": "user",
+      "content": "cotton irrigation",
+      "at": "2026-08-19T21:36:01.578211"
+    },
+    {
+      "role": "assistant",
+      "content": "\u0b95\u0b9f\u0bc1\u0b95\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0bb2\u0bc7\u0b9a\u0bbe\u0ba9 \u0baa\u0bbe\u0b9a\u0ba9 \u0ba8\u0bc0\u0bb0\u0bcd \u0baa\u0baf\u0ba9\u0bcd\u0baa\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4. Better advice-ku: \u0ba8\u0ba9\u0bcd\u0b9a\u0bc6\u0baf\u0bcd \u0ba8\u0bbf\u0bb2\u0bae\u0bbe (\u0b95\u0bbe\u0bb2\u0bcd\u0bb5\u0bbe\u0baf\u0bcd \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd) \u0b87\u0bb2\u0bcd\u0bb2 \u0baa\u0bc1\u0b9e\u0bcd\u0b9a\u0bc8 rain-fed-aa?",
+      "at": "2026-08-19T21:36:11.103932",
+      "intent": "irrigation_query",
+      "agent_mode": true
+    }
+  ],
+  "last_intent": null,
+  "greeted": false
+}

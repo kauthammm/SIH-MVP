@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "region": "Tamil Nadu",
+    "updated": "2026-08",
+    "note": "Indicative seasonal demand scores (1-10) and profit potential for planning — verify at local mandi."
+  },
+  "seasons": {
+    "Kharif": {"months": [6, 7, 8, 9, 10], "label_en": "Monsoon season (Jun–Oct)", "label_ta": "மழைக்காலம் (ஜூன்–அக்டோ)"},
+    "Rabi": {"months": [11, 12, 1, 2, 3], "label_en": "Winter season (Nov–Mar)", "label_ta": "குளிர்காலம் (நவ–மார்)"},
+    "Summer": {"months": [4, 5], "label_en": "Summer (Apr–May)", "label_ta": "கோடை (ஏப்–மே)"}
+  },
+  "crops": [
+    {"name": "Rice", "type": "cereal", "demand_score": 9, "profit_score": 6, "best_season": "Kharif", "land_types": ["Wetland"], "water_need": "high", "avg_price_hint": "₹22-28/kg"},
+    {"name": "Groundnut", "type": "oilseed", "demand_score": 8, "profit_score": 7, "best_season": "Kharif", "land_types": ["Dryland", "Garden land"], "water_need": "low", "avg_price_hint": "₹55-65/kg"},
+    {"name": "Blackgram", "type": "pulse", "demand_score": 8, "profit_score": 8, "best_season": "Kharif", "land_types": ["Dryland"], "water_need": "low", "avg_price_hint": "₹80-95/kg"},
+    {"name": "Cotton", "type": "fiber", "demand_score": 7, "profit_score": 7, "best_season": "Kharif", "land_types": ["Dryland", "Garden land"], "water_need": "medium", "avg_price_hint": "₹6500-7500/quintal"},
+    {"name": "Sugarcane", "type": "cash", "demand_score": 9, "profit_score": 6, "best_season": "Kharif", "land_types": ["Wetland"], "water_need": "high", "avg_price_hint": "Govt FRP ~₹3400/ton"},
+    {"name": "Tomato", "type": "vegetable", "demand_score": 9, "profit_score": 8, "best_season": "Rabi", "land_types": ["Garden land", "Wetland"], "water_need": "medium", "avg_price_hint": "₹15-40/kg seasonal swing"},
+    {"name": "Onion", "type": "vegetable", "demand_score": 10, "profit_score": 7, "best_season": "Rabi", "land_types": ["Garden land", "Dryland"], "water_need": "medium", "avg_price_hint": "₹20-50/kg seasonal swing"},
+    {"name": "Brinjal", "type": "vegetable", "demand_score": 8, "profit_score": 8, "best_season": "Kharif", "land_types": ["Garden land"], "water_need": "medium", "avg_price_hint": "₹25-45/kg"},
+    {"name": "Chilli", "type": "vegetable", "demand_score": 9, "profit_score": 9, "best_season": "Kharif", "land_types": ["Dryland", "Garden land"], "water_need": "low", "avg_price_hint": "₹80-200/kg export demand"},
+    {"name": "Banana", "type": "fruit", "demand_score": 10, "profit_score": 7, "best_season": "Kharif", "land_types": ["Wetland", "Garden land"], "water_need": "high", "avg_price_hint": "₹25-45/dozen"},
+    {"name": "Mango", "type": "fruit", "demand_score": 9, "profit_score": 8, "best_season": "Summer", "land_types": ["Dryland", "Garden land"], "water_need": "low", "avg_price_hint": "₹40-120/kg by variety"},
+    {"name": "Coconut", "type": "fruit", "demand_score": 9, "profit_score": 6, "best_season": "Kharif", "land_types": ["Garden land"], "water_need": "medium", "avg_price_hint": "₹15-25/nut"},
+    {"name": "Turmeric", "type": "spice", "demand_score": 8, "profit_score": 9, "best_season": "Kharif", "land_types": ["Garden land"], "water_need": "medium", "avg_price_hint": "₹80-150/kg"},
+    {"name": "Maize", "type": "cereal", "demand_score": 8, "profit_score": 6, "best_season": "Kharif", "land_types": ["Dryland", "Wetland"], "water_need": "medium", "avg_price_hint": "₹18-24/kg"},
+    {"name": "Sunflower", "type": "oilseed", "demand_score": 7, "profit_score": 7, "best_season": "Rabi", "land_types": ["Dryland"], "water_need": "low", "avg_price_hint": "₹45-55/kg"}
+  ],
+  "district_preferences": {
+    "Thanjavur": ["Rice", "Sugarcane", "Banana", "Blackgram"],
+    "Coimbatore": ["Coconut", "Turmeric", "Tomato", "Maize"],
+    "Cuddalore": ["Rice", "Groundnut", "Pulses", "Cashew"],
+    "Nagapattinam": ["Rice", "Groundnut", "Coconut"],
+    "Tiruvarur": ["Rice", "Sugarcane", "Banana"],
+    "Ariyalur": ["Maize", "Groundnut", "Cotton"],
+    "Perambalur": ["Maize", "Cotton", "Onion"]
+  }
+}

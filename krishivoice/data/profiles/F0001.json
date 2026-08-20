@@ -1,0 +1,54 @@
+{
+  "farmer_id": "F0001",
+  "active_parcel_id": "FL001",
+  "parcels": {
+    "FL001": {
+      "is_custom_land": true,
+      "land_name": "Arasur",
+      "crop": "Rice",
+      "growth_stage": "Nursery",
+      "created_at": "2026-08-20",
+      "district": "Coimbatore",
+      "taluk": "Sulur",
+      "village": "Arasur",
+      "latitude": 11.071797,
+      "longitude": 77.11537,
+      "area": 0.0,
+      "soil": {
+        "ph": 8.1,
+        "nitrogen": 168,
+        "phosphorus": 18.5,
+        "potassium": 318,
+        "organic_carbon": 0.32,
+        "soil_type": "Red Soil"
+      },
+      "segments": [
+        {
+          "segment_id": "S1",
+          "name": "My farm 1",
+          "crop": "Rice",
+          "growth_stage": "Tillering",
+          "area_ha": 1,
+          "soil_type": "Clay Loam",
+          "soil": null,
+          "latitude": 11.071797447879405,
+          "longitude": 77.11536998176311,
+          "color": "#40916c"
+        }
+      ],
+      "land_type": "Wetland",
+      "irrigation_source": "Canal",
+      "land_slope": "Flat",
+      "drainage": "Moderate",
+      "water_table": "Medium",
+      "soil_texture": "Clay Loam",
+      "field_condition": "Good",
+      "updated_at": "2026-08-20",
+      "soil_report_uploaded_at": "2026-08-20",
+      "soil_moisture": 28.0
+    }
+  },
+  "display_name": "Kautham",
+  "owner_display_name": "Kautham",
+  "custom_land_seq": 2
+}

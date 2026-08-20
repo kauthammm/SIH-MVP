@@ -1,0 +1,13 @@
+{
+  "farmer_id": "F0002",
+  "active_parcel_id": "P0086",
+  "parcels": {
+    "P0086": {
+      "district": "Cuddalore",
+      "village": "Panruti",
+      "crop": "Groundnut"
+    }
+  },
+  "display_name": "Test Farmer 2",
+  "owner_display_name": "Test Farmer 2"
+}

@@ -1,0 +1,18 @@
+{
+  "task": "soil_crop_multilabel",
+  "train_rows": 79502,
+  "test_rows": 20498,
+  "test_districts": [
+    "Karur",
+    "Krishnagiri",
+    "Perambalur",
+    "Sivagangai",
+    "Tiruppur",
+    "Villupuram"
+  ],
+  "accuracy_per_label": 0.975,
+  "precision_macro": 0.9167,
+  "recall_macro": 0.8585,
+  "f1_macro": 0.8828,
+  "f1_micro": 0.9785
+}

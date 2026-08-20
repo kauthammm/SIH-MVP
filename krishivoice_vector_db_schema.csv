@@ -1,0 +1,16 @@
+﻿type,field,design
+collection,krishivoice_questions,"Multilingual question embeddings; metadata filters: intent,crop,soil_type,district,language"
+collection,krishivoice_canonical_answers,Vetted answer source keyed by canonical_answer_id
+embedding_model,recommended,BAAI/bge-m3 or paraphrase-multilingual-mpnet-base-v2
+vector,question_embedding,768/1024-dimensional model output; normalize before cosine search
+metadata,intent,Hierarchical intent label
+metadata,crop,Crop entity
+metadata,soil_type,Soil entity
+metadata,district,Tamil Nadu district
+metadata,language,Tamil / Tanglish / English
+retrieval,top_k,Retrieve top 5-10 candidates
+gate,similarity_threshold,Start around 0.70 and tune on real farmer validation data
+answer,canonical_answer_id,Fetch vetted response; never answer directly from paraphrase row
+fallback,low_confidence,Ask one clarification question instead of guessing
+live_data,market_price,Fetch current market data; do not embed stale prices
+live_data,weather,Fetch current/future weather; do not rely on static vectors

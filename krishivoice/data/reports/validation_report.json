@@ -1,0 +1,304 @@
+{
+  "data_type": "SYNTHETIC_DEMO",
+  "field_types": {
+    "numerical": [
+      "area",
+      "pH",
+      "nitrogen",
+      "phosphorus",
+      "potassium",
+      "yield",
+      "rainfall",
+      "temperature",
+      "NDVI"
+    ],
+    "categorical": [
+      "district",
+      "crop",
+      "season",
+      "soil_type",
+      "irrigation_source",
+      "growth_stage"
+    ],
+    "temporal": [
+      "sample_date",
+      "sowing_date",
+      "harvest_date",
+      "date"
+    ],
+    "geospatial": [
+      "latitude",
+      "longitude",
+      "district"
+    ],
+    "text": [
+      "recommendation",
+      "village",
+      "taluk"
+    ]
+  },
+  "missing_values": {
+    "farmers": {
+      "total_rows": 350,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    },
+    "land_parcels": {
+      "total_rows": 500,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    },
+    "soil_data": {
+      "total_rows": 1006,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    },
+    "crop_history": {
+      "total_rows": 4848,
+      "missing_by_column": {
+        "pesticide": 1189
+      },
+      "missing_pct": 2.04
+    },
+    "weather_data": {
+      "total_rows": 1824,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    },
+    "irrigation_data": {
+      "total_rows": 13926,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    },
+    "crop_observations": {
+      "total_rows": 5055,
+      "missing_by_column": {
+        "pest": 2541,
+        "disease": 2559
+      },
+      "missing_pct": 11.21
+    },
+    "advisory_history": {
+      "total_rows": 2536,
+      "missing_by_column": {},
+      "missing_pct": 0.0
+    }
+  },
+  "duplicates": {
+    "farmers": {
+      "duplicate_rows": 0,
+      "key_columns": [
+        "farmer_id"
+      ]
+    },
+    "land_parcels": {
+      "duplicate_rows": 0,
+      "key_columns": [
+        "parcel_id"
+      ]
+    },
+    "soil_data": {
+      "duplicate_rows": 0,
+      "key_columns": [
+        "parcel_id",
+        "sample_date"
+      ]
+    },
+    "crop_history": {
+      "duplicate_rows": 0,
+      "key_columns": [
+        "parcel_id",
+        "year",
+        "season",
+        "crop"
+      ]
+    },
+    "weather_data": {
+      "duplicate_rows": 0,
+      "key_columns": [
+        "date",
+        "district"
+      ]
+    },
+    "irrigation_data": {
+      "duplicate_rows": 742,
+      "key_columns": [
+        "parcel_id",
+        "date"
+      ]
+    },
+    "crop_observations": {
+      "duplicate_rows": 302,
+      "key_columns": [
+        "parcel_id",
+        "date"
+      ]
+    },
+    "advisory_history": {
+      "duplicate_rows": 16,
+      "key_columns": [
+        "parcel_id",
+        "date",
+        "recommendation"
+      ]
+    }
+  },
+  "coordinates": {
+    "invalid_count": 0,
+    "invalid_parcel_ids": []
+  },
+  "soil_validation": {
+    "issues": []
+  },
+  "date_validation": {
+    "soil_data.sample_date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "crop_history.sowing_date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "crop_history.harvest_date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "weather_data.date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "irrigation_data.date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "crop_observations.date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    },
+    "advisory_history.date": {
+      "invalid_dates": 0,
+      "future_dates": 0
+    }
+  },
+  "impossible_yields": {
+    "impossible_yield_rows": 0
+  },
+  "impossible_rainfall": {
+    "impossible_rainfall_rows": 0
+  },
+  "categorical_encodings": {
+    "farmers": {
+      "district": {
+        "Cuddalore": 0,
+        "Thanjavur": 1
+      },
+      "taluk": {
+        "Chidambaram": 0,
+        "Cuddalore": 1,
+        "Kumbakonam": 2,
+        "Orathanadu": 3,
+        "Panruti": 4,
+        "Papanasam": 5,
+        "Thanjavur": 6,
+        "Virudhachalam": 7
+      },
+      "primary_crop": {
+        "Groundnut": 0,
+        "Rice": 1,
+        "Sugarcane": 2
+      },
+      "preferred_language": {
+        "English": 0,
+        "Tamil": 1
+      }
+    },
+    "land_parcels": {
+      "district": {
+        "Cuddalore": 0,
+        "Thanjavur": 1
+      },
+      "land_category": {
+        "Dryland": 0,
+        "Garden Land": 1,
+        "Wetland": 2
+      },
+      "irrigation_source": {
+        "Borewell": 0,
+        "Canal": 1,
+        "Rainfed": 2,
+        "River": 3,
+        "Tank": 4
+      },
+      "soil_type": {
+        "Alluvial": 0,
+        "Clay": 1,
+        "Clay Loam": 2,
+        "Loam": 3,
+        "Sandy Loam": 4
+      }
+    },
+    "crop_history": {
+      "season": {
+        "Kharif": 0,
+        "Rabi": 1,
+        "Summer": 2
+      },
+      "crop": {
+        "Groundnut": 0,
+        "Rice": 1,
+        "Sugarcane": 2
+      },
+      "fertilizer": {
+        "DAP": 0,
+        "MOP": 1,
+        "NPK 19:19:19": 2,
+        "Organic Compost": 3,
+        "Urea": 4
+      }
+    },
+    "crop_observations": {
+      "crop": {
+        "Groundnut": 0,
+        "Rice": 1,
+        "Sugarcane": 2
+      },
+      "growth_stage": {
+        "Flowering": 0,
+        "Germination": 1,
+        "Grand Growth": 2,
+        "Maturity": 3,
+        "Panicle Initiation": 4,
+        "Peg Formation": 5,
+        "Seedling": 6,
+        "Tillering": 7,
+        "Vegetative": 8
+      },
+      "leaf_condition": {
+        "Healthy": 0,
+        "Spotted": 1,
+        "Wilting": 2,
+        "Yellowing": 3
+      },
+      "pest": {
+        "Brown Plant Hopper": 0,
+        "Leaf Folder": 1,
+        "Stem Borer": 2
+      },
+      "disease": {
+        "Blast": 0,
+        "Leaf Spot": 1,
+        "Sheath Blight": 2
+      }
+    }
+  },
+  "processed_row_counts": {
+    "farmers": 350,
+    "land_parcels": 500,
+    "soil_data": 1006,
+    "crop_history": 4848,
+    "weather_data": 1824,
+    "irrigation_data": 13926,
+    "crop_observations": 5055,
+    "advisory_history": 2536
+  }
+}

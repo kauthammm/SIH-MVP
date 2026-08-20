@@ -1,0 +1,31 @@
+{
+  "task": "yield_prediction",
+  "target": "yield_tph",
+  "results": [
+    {
+      "model": "LinearRegression",
+      "MAE": 1.2326,
+      "RMSE": 1.4538,
+      "R2": 0.0422
+    },
+    {
+      "model": "RandomForest",
+      "MAE": 0.9708,
+      "RMSE": 1.1625,
+      "R2": 0.3876
+    },
+    {
+      "model": "GradientBoosting",
+      "MAE": 0.9885,
+      "RMSE": 1.1994,
+      "R2": 0.3481
+    },
+    {
+      "model": "XGBoost",
+      "MAE": 1.0436,
+      "RMSE": 1.277,
+      "R2": 0.261
+    }
+  ],
+  "selected": "RandomForest"
+}

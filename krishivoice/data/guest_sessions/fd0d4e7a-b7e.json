@@ -1,0 +1,57 @@
+{
+  "session_id": "fd0d4e7a-b7e",
+  "created_at": "2026-08-19T14:06:15.706015",
+  "updated_at": "2026-08-19T14:06:18.377708",
+  "language": "English",
+  "step": "greeting",
+  "turn_count": 7,
+  "profile": {
+    "crop": "Rice",
+    "land_type": "Wetland",
+    "irrigation_source": "Canal",
+    "soil_moisture": 38.0
+  },
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Hello! I'm KrishiVoice, your farming assistant. How can I help you today? You can tell me what crop you grow, ask about water, fertilizer, weather, or what to plant for profit.",
+      "at": "2026-08-19T14:06:15.728230",
+      "type": "greeting"
+    },
+    {
+      "role": "user",
+      "content": "I am planting rice in wet land with canal water",
+      "at": "2026-08-19T14:06:15.744802"
+    },
+    {
+      "role": "assistant",
+      "content": "Good \u2014 you're planting Rice at your area, Tamil Nadu. Your wetland field For starting out: keep soil moist, about 50 mm every 5 days (Maintain 2\u20135 cm standing water if canal-fed wetland). Basal fertilizer: Urea 50 kg/ha top-dress + MOP 25 kg/ha if K low \u2014 N 50 kg/ha. Pin your farm on the map in profile for weather-based alerts.",
+      "at": "2026-08-19T14:06:18.097442",
+      "intent": "planting_declaration"
+    },
+    {
+      "role": "user",
+      "content": "How much water should I give?",
+      "at": "2026-08-19T14:06:18.120673"
+    },
+    {
+      "role": "assistant",
+      "content": "For your Rice (Tillering) on Clay Loam soil at your area, Tamil Nadu: irrigate every 5 days, 50 mm (~2 times/week). Maintain 2\u20135 cm standing water if canal-fed wetland Each watering \u2248 500,000 litres for your farm. Your moisture is 38.0% (ideal ~30%). No urgent irrigation today.",
+      "at": "2026-08-19T14:06:18.141442",
+      "intent": "irrigation_query"
+    },
+    {
+      "role": "user",
+      "content": "What vegetable has high profit demand?",
+      "at": "2026-08-19T14:06:18.157519"
+    },
+    {
+      "role": "assistant",
+      "content": "Best crops for your Wetland land (Monsoon season (Jun\u2013Oct)): 1. Banana \u2014 demand 10/10, profit potential 7/10. Price hint: \u20b925-45/dozen. 2. Rice \u2014 demand 9/10, profit potential 6/10. Price hint: \u20b922-28/kg, avg yield 4.2 t/ha. 3. Sugarcane \u2014 demand 9/10, profit potential 6/10. Price hint: Govt FRP ~\u20b93400/ton, avg yield 2.2 t/ha. 4. Maize \u2014 demand 8/10, profit potential 6/10. Price hint: \u20b918-24/kg. Rice demand score: 9/10, profit potential: 6/10. Best season: Kharif. Price hint: \u20b922-28/kg.",
+      "at": "2026-08-19T14:06:18.377708",
+      "intent": "crop_recommendation"
+    }
+  ],
+  "last_intent": null,
+  "greeted": false
+}

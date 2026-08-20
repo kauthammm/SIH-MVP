@@ -1,0 +1,324 @@
+[
+  {
+    "alert_id": "Thanjavur|Ayyampettai-irrigation_urgent-20260819",
+    "type": "irrigation",
+    "severity": "high",
+    "title_en": "Urgent irrigation needed",
+    "title_ta": "\u0b85\u0bb5\u0b9a\u0bb0\u0bae\u0bbe \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd \u0baa\u0bbe\u0baf\u0bcd\u0b9a\u0bcd\u0b9a\u0ba3\u0bc1\u0bae\u0bcd",
+    "message_en": "Soil moisture (15.800000190734863%) is below critical threshold (20%).",
+    "message_ta": "\u0b85\u0bb5\u0b9a\u0bb0\u0bae\u0bbe \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd \u0baa\u0bbe\u0baf\u0bcd\u0b9a\u0bcd\u0b9a\u0ba3\u0bc1\u0bae\u0bcd. Soil moisture (15.800000190734863%) is below critical threshold (20%).",
+    "spoken_en": "Urgent irrigation needed. Soil moisture (15.800000190734863%) is below critical threshold (20%). This evening",
+    "spoken_ta": "\u0b85\u0bb5\u0b9a\u0bb0\u0bae\u0bbe \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd \u0baa\u0bbe\u0baf\u0bcd\u0b9a\u0bcd\u0b9a\u0ba3\u0bc1\u0bae\u0bcd. \u0b85\u0bb5\u0b9a\u0bb0\u0bae\u0bbe \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd \u0baa\u0bbe\u0baf\u0bcd\u0b9a\u0bcd\u0b9a\u0ba3\u0bc1\u0bae\u0bcd. Soil moisture (15.800000190734863%) is below critical threshold (20%). This evening",
+    "locality_id": "Thanjavur|Ayyampettai",
+    "district": "Thanjavur",
+    "village": "Ayyampettai",
+    "farmer_count_in_locality": 25,
+    "farmers_in_region": [
+      {
+        "farmer_id": "F0160",
+        "display_name": "F0160",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0035",
+        "display_name": "F0035",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0167",
+        "display_name": "F0167",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0211",
+        "display_name": "F0211",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0036",
+        "display_name": "F0036",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0097",
+        "display_name": "F0097",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0061",
+        "display_name": "F0061",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 4
+      },
+      {
+        "farmer_id": "F0226",
+        "display_name": "F0226",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0102",
+        "display_name": "F0102",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0184",
+        "display_name": "F0184",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0230",
+        "display_name": "F0230",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0101",
+        "display_name": "F0101",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0080",
+        "display_name": "F0080",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0119",
+        "display_name": "F0119",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0147",
+        "display_name": "F0147",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0287",
+        "display_name": "F0287",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0043",
+        "display_name": "F0043",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0320",
+        "display_name": "F0320",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0199",
+        "display_name": "F0199",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0195",
+        "display_name": "F0195",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      }
+    ],
+    "regional": true,
+    "id": "n-1787109787-F0211",
+    "created_at": "2026-08-19T08:53:07.425554Z",
+    "read": false
+  },
+  {
+    "alert_id": "Thanjavur|Ayyampettai-overall_risk_high-20260819",
+    "type": "field",
+    "severity": "high",
+    "title_en": "High field risk today",
+    "title_ta": "\u0b87\u0ba9\u0bcd\u0bb1\u0bc1 \u0bb5\u0baf\u0bb2\u0bcd risk \u0b85\u0ba4\u0bbf\u0b95\u0bae\u0bcd",
+    "message_en": "Combined water, weather or pest/disease risk is elevated for your field.",
+    "message_ta": "water, weather, pest/disease risk ellam konjam high. \u0bb5\u0baf\u0bb2\u0bcd close-\u0b86 monitor pannunga.",
+    "spoken_en": "High field risk today. Combined water, weather or pest/disease risk is elevated for your field.",
+    "spoken_ta": "\u0b87\u0ba9\u0bcd\u0bb1\u0bc1 \u0bb5\u0baf\u0bb2\u0bcd risk \u0b85\u0ba4\u0bbf\u0b95\u0bae\u0bcd. water, weather, pest/disease risk ellam konjam high. \u0bb5\u0baf\u0bb2\u0bcd close-\u0b86 monitor pannunga.",
+    "locality_id": "Thanjavur|Ayyampettai",
+    "district": "Thanjavur",
+    "village": "Ayyampettai",
+    "farmer_count_in_locality": 25,
+    "farmers_in_region": [
+      {
+        "farmer_id": "F0160",
+        "display_name": "F0160",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0035",
+        "display_name": "F0035",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0167",
+        "display_name": "F0167",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0211",
+        "display_name": "F0211",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0036",
+        "display_name": "F0036",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0097",
+        "display_name": "F0097",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0061",
+        "display_name": "F0061",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 4
+      },
+      {
+        "farmer_id": "F0226",
+        "display_name": "F0226",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0102",
+        "display_name": "F0102",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0184",
+        "display_name": "F0184",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0230",
+        "display_name": "F0230",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0101",
+        "display_name": "F0101",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0080",
+        "display_name": "F0080",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 3
+      },
+      {
+        "farmer_id": "F0119",
+        "display_name": "F0119",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0147",
+        "display_name": "F0147",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0287",
+        "display_name": "F0287",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0043",
+        "display_name": "F0043",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 2
+      },
+      {
+        "farmer_id": "F0320",
+        "display_name": "F0320",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0199",
+        "display_name": "F0199",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      },
+      {
+        "farmer_id": "F0195",
+        "display_name": "F0195",
+        "district": "Thanjavur",
+        "village": "Ayyampettai",
+        "parcel_count": 1
+      }
+    ],
+    "regional": true,
+    "id": "n-1787109787-F0211",
+    "created_at": "2026-08-19T08:53:07.409397Z",
+    "read": false
+  }
+]

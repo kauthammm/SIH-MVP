@@ -1,0 +1,85 @@
+{
+  "soil_properties": {
+    "Clay Loam": {
+      "water_holding": "High",
+      "drainage": "Moderate",
+      "irrigation_interval_factor": 1.0,
+      "advice_en": "Clay loam holds moisture well. Irrigate when top 5 cm feels dry — typically every 5–7 days in active growth.",
+      "advice_ta": "Clay loam moisture retain pannum. Mel 5 cm dry-aa irundha thanneer — active growth-la 5–7 naal ku oru murai."
+    },
+    "Clay": {
+      "water_holding": "Very high",
+      "drainage": "Slow",
+      "irrigation_interval_factor": 1.2,
+      "advice_en": "Heavy clay drains slowly — avoid over-irrigation. Water deeply but less often (every 7–10 days).",
+      "advice_ta": "Heavy clay slow-aa drain aagum — athigam thanneer avoid pannunga. 7–10 naal ku oru murai deep irrigation."
+    },
+    "Loam": {
+      "water_holding": "Medium",
+      "drainage": "Good",
+      "irrigation_interval_factor": 0.9,
+      "advice_en": "Loam balances drainage and retention — irrigate every 4–6 days during tillering/flowering.",
+      "advice_ta": "Loam balanced-aa irukku — tillering/flowering-la 4–6 naal ku oru murai paayichu."
+    },
+    "Sandy Loam": {
+      "water_holding": "Low",
+      "drainage": "Fast",
+      "irrigation_interval_factor": 0.7,
+      "advice_en": "Sandy loam dries quickly — shorter intervals (every 3–4 days), lighter but frequent irrigation.",
+      "advice_ta": "Sandy loam seekiram dry aagum — 3–4 naal ku oru murai, konjam konjam frequent irrigation."
+    },
+    "Alluvial": {
+      "water_holding": "Medium-high",
+      "drainage": "Good",
+      "irrigation_interval_factor": 0.95,
+      "advice_en": "Alluvial soils are fertile — maintain 25–30% moisture; irrigate every 5–6 days if no rain.",
+      "advice_ta": "Alluvial soil fertile — 25–30% moisture maintain pannunga; mazhai illana 5–6 naal ku oru murai."
+    },
+    "Red Soil": {
+      "water_holding": "Low-medium",
+      "drainage": "Moderate",
+      "irrigation_interval_factor": 0.8,
+      "advice_en": "Red soil needs organic matter and frequent light irrigation (every 4–5 days) in dry spells.",
+      "advice_ta": "Red soil-ku organic matter + 4–5 naal ku oru murai light irrigation thevai."
+    },
+    "Black Cotton Soil": {
+      "water_holding": "High when wet",
+      "drainage": "Poor when saturated",
+      "irrigation_interval_factor": 1.1,
+      "advice_en": "Black cotton soil cracks when dry — avoid long gaps; irrigate every 6–8 days with moderate depth.",
+      "advice_ta": "Black cotton soil dry-aa crack aagum — 6–8 naal ku oru murai moderate depth irrigation."
+    }
+  },
+  "irrigation_schedules": [
+    {"crop": "Rice", "growth_stage": "Nursery", "land_type": "Wetland", "interval_days": 2, "water_mm": 25, "times_per_week": 3, "method_en": "Keep beds moist, 2–3 cm shallow water", "method_ta": "Nursery bed moist-aa vechukonga, 2–3 cm shallow water"},
+    {"crop": "Rice", "growth_stage": "Tillering", "land_type": "Wetland", "interval_days": 5, "water_mm": 50, "times_per_week": 2, "method_en": "Maintain 2–5 cm standing water if canal-fed wetland", "method_ta": "Canal wetland-na 2–5 cm standing water maintain pannunga"},
+    {"crop": "Rice", "growth_stage": "Tillering", "land_type": "Dryland", "interval_days": 4, "water_mm": 40, "times_per_week": 2, "method_en": "Alternate wetting and drying — irrigate when cracks appear", "method_ta": "Alternate wetting/drying — crack varum podhu thanneer"},
+    {"crop": "Rice", "growth_stage": "Panicle Initiation", "land_type": "Wetland", "interval_days": 4, "water_mm": 55, "times_per_week": 2, "method_en": "Critical stage — never allow moisture stress; shallow flood", "method_ta": "Critical stage — moisture stress avoid; shallow flood vechukonga"},
+    {"crop": "Rice", "growth_stage": "Flowering", "land_type": "Wetland", "interval_days": 3, "water_mm": 50, "times_per_week": 2, "method_en": "Stable moisture; avoid sudden drainage", "method_ta": "Stable moisture maintain; sudden drainage avoid"},
+    {"crop": "Rice", "growth_stage": "Maturity", "land_type": "Wetland", "interval_days": 10, "water_mm": 30, "times_per_week": 1, "method_en": "Gradually reduce water 10–15 days before harvest", "method_ta": "Harvest munadi 10–15 naal thanneer gradually reduce pannunga"},
+    {"crop": "Groundnut", "growth_stage": "Flowering", "land_type": "Dryland", "interval_days": 5, "water_mm": 35, "times_per_week": 1, "method_en": "Light irrigation at pegging/flowering if no rain", "method_ta": "Pegging/flowering-la mazhai illana light irrigation"},
+    {"crop": "Groundnut", "growth_stage": "Tillering", "land_type": "Dryland", "interval_days": 7, "water_mm": 30, "times_per_week": 1, "method_en": "Rain-fed preferred; one supplemental if dry spell >10 days", "method_ta": "Rain-fed best; 10 naal dry-aa irundha oru supplemental irrigation"},
+    {"crop": "Blackgram", "growth_stage": "Flowering", "land_type": "Dryland", "interval_days": 6, "water_mm": 30, "times_per_week": 1, "method_en": "One critical irrigation at flowering if rain fails", "method_ta": "Flowering-la mazhai fail aana oru critical irrigation"},
+    {"crop": "Sugarcane", "growth_stage": "Tillering", "land_type": "Wetland", "interval_days": 7, "water_mm": 60, "times_per_week": 1, "method_en": "Heavy crop — weekly irrigation 60 mm or furrow irrigation", "method_ta": "Heavy crop — varam ku oru murai 60 mm or furrow irrigation"},
+    {"crop": "Cotton", "growth_stage": "Nursery", "land_type": "Dryland", "interval_days": 4, "water_mm": 35, "times_per_week": 2, "method_en": "Light irrigation every 4 days after sowing; avoid waterlogging in seedlings", "method_ta": "Sowing apram 4 naal ku oru murai light irrigation; seedling-la waterlogging avoid pannunga"},
+    {"crop": "Cotton", "growth_stage": "Nursery", "land_type": "Garden land", "interval_days": 4, "water_mm": 35, "times_per_week": 2, "method_en": "Light irrigation every 4 days after sowing; keep soil moist not flooded", "method_ta": "Sowing apram 4 naal ku oru murai light irrigation; soil moist-aa vechukonga"},
+    {"crop": "Cotton", "growth_stage": "Tillering", "land_type": "Dryland", "interval_days": 6, "water_mm": 40, "times_per_week": 1, "method_en": "Vegetative stage — irrigate every 6 days if no rain", "method_ta": "Vegetative stage — mazhai illana 6 naal ku oru murai"},
+    {"crop": "Cotton", "growth_stage": "Flowering", "land_type": "Dryland", "interval_days": 5, "water_mm": 40, "times_per_week": 1, "method_en": "Square formation and flowering need timely irrigation", "method_ta": "Square formation/flowering-la timely irrigation important"}
+  ],
+  "fertilizer_schedules": [
+    {"crop": "Rice", "growth_stage": "Tillering", "soil_type": "Clay Loam", "n_kg_ha": 50, "p_kg_ha": 0, "k_kg_ha": 25, "product_en": "Urea 50 kg/ha top-dress + MOP 25 kg/ha if K low", "product_ta": "Urea 50 kg/ha top-dress + K kammi-na MOP 25 kg/ha", "timing_en": "Apply with standing water or just before irrigation", "timing_ta": "Standing water-oda or irrigation munadi apply pannunga"},
+    {"crop": "Rice", "growth_stage": "Panicle Initiation", "soil_type": "Clay Loam", "n_kg_ha": 30, "p_kg_ha": 0, "k_kg_ha": 0, "product_en": "Urea 30 kg/ha last split if N deficient", "product_ta": "N kammi-na Urea 30 kg/ha last split", "timing_en": "Before panicle initiation — moisture must be adequate", "timing_ta": "Panicle initiation munadi — moisture adequate-aa irukanum"},
+    {"crop": "Rice", "growth_stage": "Tillering", "soil_type": "Red Soil", "n_kg_ha": 40, "p_kg_ha": 20, "k_kg_ha": 20, "product_en": "Split N in 2 doses; add DAP 20 kg/ha if P < 15", "product_ta": "N 2 dose-la split; P < 15-na DAP 20 kg/ha", "timing_en": "First dose at tillering, second at PI if needed", "timing_ta": "Tillering-la first dose, PI-la second dose"},
+    {"crop": "Groundnut", "growth_stage": "Flowering", "soil_type": "Sandy Loam", "n_kg_ha": 10, "p_kg_ha": 40, "k_kg_ha": 20, "product_en": "Gypsum 200 kg/ha at pegging + DAP if P low", "product_ta": "Pegging-la gypsum 200 kg/ha + P kammi-na DAP", "timing_en": "Apply gypsum before flowering peak", "timing_ta": "Flowering peak munadi gypsum apply"},
+    {"crop": "Blackgram", "growth_stage": "Tillering", "soil_type": "Loam", "n_kg_ha": 20, "p_kg_ha": 40, "k_kg_ha": 20, "product_en": "Basal DAP 40 kg/ha + urea 20 kg/ha top-dress", "product_ta": "Basal DAP 40 kg/ha + urea 20 kg/ha top-dress", "timing_en": "Basal at sowing, top-dress at branching", "timing_ta": "Sowing-la basal, branching-la top-dress"},
+    {"crop": "Sugarcane", "growth_stage": "Tillering", "soil_type": "Alluvial", "n_kg_ha": 75, "p_kg_ha": 30, "k_kg_ha": 40, "product_en": "Urea + MOP split across tillering months", "product_ta": "Tillering months-la Urea + MOP split pannunga", "timing_en": "Monthly splits for 3 months from planting", "timing_ta": "Planting irundhu 3 months monthly split"},
+    {"crop": "Cotton", "growth_stage": "Flowering", "soil_type": "Black Cotton Soil", "n_kg_ha": 25, "p_kg_ha": 0, "k_kg_ha": 15, "product_en": "Urea 25 kg/ha + MOP 15 kg/ha at square formation", "product_ta": "Square formation-la Urea 25 + MOP 15 kg/ha", "timing_en": "Apply with irrigation; avoid excess N late season", "timing_ta": "Irrigation-oda apply; late season excess N avoid"}
+  ],
+  "crop_baselines": {
+    "Rice": {"optimal_moisture_pct": 30, "critical_moisture_pct": 20, "typical_yield_t_ha": 4.2},
+    "Groundnut": {"optimal_moisture_pct": 22, "critical_moisture_pct": 14, "typical_yield_t_ha": 1.8},
+    "Blackgram": {"optimal_moisture_pct": 22, "critical_moisture_pct": 14, "typical_yield_t_ha": 1.2},
+    "Sugarcane": {"optimal_moisture_pct": 35, "critical_moisture_pct": 22, "typical_yield_t_ha": 65},
+    "Cotton": {"optimal_moisture_pct": 26, "critical_moisture_pct": 16, "typical_yield_t_ha": 2.5}
+  }
+}

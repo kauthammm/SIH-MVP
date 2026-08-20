@@ -1,0 +1,78 @@
+{
+  "farmer_id": "F0042",
+  "active_parcel_id": "P0042",
+  "parcels": {
+    "P0187": {
+      "latitude": 11.072556,
+      "longitude": 77.113797,
+      "village": "Arasur",
+      "land_name": "Arasur",
+      "land_type": "Wetland",
+      "irrigation_source": "Canal",
+      "soil_moisture": 28.0,
+      "soil": {
+        "ph": 7.6,
+        "nitrogen": 201.0,
+        "phosphorus": 27.3,
+        "potassium": 263.0,
+        "organic_carbon": 0.4,
+        "electrical_conductivity": 0.4,
+        "soil_type": "Red Loam"
+      },
+      "crop": "Rice",
+      "growth_stage": "Tillering",
+      "updated_at": "2026-08-20",
+      "district": "Coimbatore",
+      "taluk": "Sulur",
+      "segments": [
+        {
+          "segment_id": "S1",
+          "name": "Main",
+          "crop": "Rice",
+          "growth_stage": null,
+          "soil_type": null,
+          "soil": null,
+          "latitude": 11.072555545234067,
+          "longitude": 77.11379739705734,
+          "color": "#40916c"
+        }
+      ],
+      "boundary": [
+        {
+          "lat": 10.79,
+          "lng": 79.14
+        },
+        {
+          "lat": 10.791,
+          "lng": 79.14
+        },
+        {
+          "lat": 10.791,
+          "lng": 79.141
+        }
+      ],
+      "area": 0.60865107421875,
+      "land_slope": "Flat",
+      "drainage": "Moderate",
+      "water_table": "Medium",
+      "soil_texture": "Clay Loam",
+      "field_condition": "Good",
+      "soil_report_uploaded_at": "2026-08-20"
+    },
+    "FL001": {
+      "is_custom_land": true,
+      "land_name": "My farm 1",
+      "crop": "Rice",
+      "growth_stage": "Tillering",
+      "created_at": "2026-08-19",
+      "latitude": 10.79,
+      "longitude": 79.14
+    },
+    "P0042": {
+      "crop": "Cotton",
+      "updated_at": "2026-08-20",
+      "growth_stage": "Nursery"
+    }
+  },
+  "custom_land_seq": 1
+}

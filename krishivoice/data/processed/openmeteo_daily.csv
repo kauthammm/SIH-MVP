@@ -1,0 +1,4 @@
+date,temperature,humidity,wind_speed,rainfall,showers,soil_moisture_rootzone,soil_moisture_surface,soil_temp_0cm,soil_moisture_pct
+2026-08-19,29.4,70.3,12.2,14.3,9.2,0.121375,0.11554167,30.18125,12.1
+2026-08-20,29.3,68.2,12.7,0.2,0.0,0.11991667,0.110583335,29.485418,12.0
+2026-08-21,29.7,62.2,14.7,0.0,0.0,0.11754167,0.07858334,30.102083,11.8
